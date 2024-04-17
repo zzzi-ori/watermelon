@@ -30,7 +30,7 @@ const remainingTime = computed(() => {
 })
 
 const remainingDays = computed(() => {
-  return Math.ceil(remainingTime.value / (1000 * 60 * 60 * 24))
+  return Math.floor(remainingTime.value / (1000 * 60 * 60 * 24))
 })
 
 const formattedTime = computed(() => {
