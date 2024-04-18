@@ -5,7 +5,7 @@
   >
     <img :src="event" alt="event" class="mr-2" />
     <span>이벤트 종료까지&nbsp;</span>
-    <span v-if="remainingDays > 1">D-{{ remainingDays }}</span>
+    <span v-if="remainingDays > 0">D-{{ remainingDays }}</span>
     <span v-else>{{ formattedTime }}</span>
     <img :src="instagram" alt="instagram" class="absolute right-4" />
   </div>
